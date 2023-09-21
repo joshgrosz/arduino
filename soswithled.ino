@@ -1,12 +1,12 @@
 //SOS WITH LED
-//MADE USING A BREADBOARD, PLAIN LED, 220 OHM RESISTOR AND TWO M-M JUMPERS CONNECTED TO GND AND 13 PIN
+//MADE USING A BREADBOARD, LED, 220Ω RESISTOR AND 2 M-M JUMPERS
 
 void setup() {
-  pinMode(13, OUTPUT);    // sets the digital pin 13 as output
+  pinMode(13, OUTPUT);   
 }
 
 void morseO() {
-   for (int i=0; i<3; i++){  
+   for (int i=0; i<3; i++) {  
     digitalWrite(13, HIGH); // 1k ms pause between each dot
     delay(1000);            
     digitalWrite(13, LOW);
@@ -14,7 +14,7 @@ void morseO() {
     } 
   }
 void morseS() {
-      for (int i=0; i<3; i++){  
+      for (int i=0; i<3; i++) {  
         digitalWrite(13, HIGH); // 3k ms pause between each dash
         delay(3000);            
         digitalWrite(13, LOW);  
